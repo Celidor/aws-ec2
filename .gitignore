@@ -1,0 +1,20 @@
+# MacOS
+.DS_Store
+
+# IDE
+.idea
+
+# Compiled files
+*.tfstate
+*.tfstate.backup
+
+# Module directory
+.terraform/
+
+# Local state
+terraform.tfstate.d/
+.terraform.lock.hcl
+
+# Credentials
+backend.tf
+*.tfvars
