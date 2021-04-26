@@ -99,7 +99,7 @@ resource "aws_security_group" "aws-security" {
   }
   tags = {
     Name = local.env
-    Repository = "aws-security"
+    Repository = "aws-ec2"
   }
 }
 
@@ -137,7 +137,7 @@ resource "aws_route53_record" "web" {
 }
 
 resource "aws_instance" "web" {
-  instance_type = "m1.small"
+  instance_type = "t2.small"
 
   # Lookup the correct AMI based on the region
   # we specified
