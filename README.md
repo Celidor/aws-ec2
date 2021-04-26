@@ -8,6 +8,7 @@
 ## usage 
 * example for user csa21
 ```
+terraform init
 terraform workspace new csa21
 terraform plan
 terraform apply
