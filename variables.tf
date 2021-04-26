@@ -17,9 +17,9 @@ variable "repository" {
 variable "aws_amis" {
   default = {
     eu-west-1 = "ami-0dc3968196f28a80f"
-    us-east-1 = "ami-de7ab6b6"
-    us-west-1 = "ami-3f75767a"
-    us-west-2 = "ami-21f78e11"
+    eu-west-2 = "ami-041fe72c9add9508b"
+    us-east-1 = "ami-0775758906e8063e1"
+    us-west-1 = "ami-0d3f4945b82bdb031"
   }
 }
 
