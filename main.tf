@@ -3,6 +3,18 @@ provider "aws" {
   region = var.aws_region
 }
 
+# Specify versions
+terraform {
+  required_version = "> 1, < 2"
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "4.4.0"
+    }
+  }
+}
+
 # Create a VPC to launch our instances into
 resource "aws_vpc" "aws-security" {
   cidr_block = "10.0.0.0/16"
